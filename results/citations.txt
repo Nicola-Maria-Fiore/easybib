@@ -201,109 +201,6 @@
 	title = {Debt Specialization},
 	journal = {The Journal of Finance}
 }
-@article{Das_2009,
-	doi = {10.1016/j.jbankfin.2008.11.003},
-	url = {https://doi.org/10.1016%2Fj.jbankfin.2008.11.003},
-	year = 2009,
-	month = {apr},
-	publisher = {Elsevier {BV}},
-	volume = {33},
-	number = {4},
-	pages = {719--730},
-	author = {Sanjiv R. Das and Paul Hanouna and Atulya Sarin},
-	title = {Accounting-based versus market-based cross-sectional models of {CDS} spreads},
-	journal = {Journal of Banking {\&} Finance}
-}
-@article{DeFond_2003,
-	doi = {10.1016/s0165-4101(02)00098-8},
-	url = {https://doi.org/10.1016%2Fs0165-4101%2802%2900098-8},
-	year = 2003,
-	month = {apr},
-	publisher = {Elsevier {BV}},
-	volume = {35},
-	number = {1},
-	pages = {73--100},
-	author = {Mark L. DeFond and Mingyi Hung},
-	title = {An empirical analysis of analysts' cash flow forecasts},
-	journal = {Journal of Accounting and Economics}
-}
-@article{Diamond_1991,
-	doi = {10.1086/261775},
-	url = {https://doi.org/10.1086%2F261775},
-	year = 1991,
-	month = {aug},
-	publisher = {University of Chicago Press},
-	volume = {99},
-	number = {4},
-	pages = {689--721},
-	author = {Douglas W. Diamond},
-	title = {Monitoring and Reputation: The Choice between Bank Loans and Directly Placed Debt},
-	journal = {Journal of Political Economy}
-}
-@article{Easley_2004,
-	doi = {10.1111/j.1540-6261.2004.00672.x},
-	url = {https://doi.org/10.1111%2Fj.1540-6261.2004.00672.x},
-	year = 2004,
-	month = {aug},
-	publisher = {Wiley},
-	volume = {59},
-	number = {4},
-	pages = {1553--1583},
-	author = {David Easley and Maureen O{\textquotesingle}hara},
-	title = {Information and the Cost of Capital},
-	journal = {The Journal of Finance}
-}
-@article{EASTON_2009,
-	doi = {10.1111/j.1475-679x.2009.00333.x},
-	url = {https://doi.org/10.1111%2Fj.1475-679x.2009.00333.x},
-	year = 2009,
-	month = {jun},
-	publisher = {Wiley},
-	volume = {47},
-	number = {3},
-	pages = {721--766},
-	author = {PETER D. EASTON and STEVEN J. MONAHAN and FLORIN P. VASVARI},
-	title = {Initial Evidence on the Role of Accounting Earnings in the Bond Market},
-	journal = {Journal of Accounting Research}
-}
-@article{Jakl_2020,
-	doi = {10.18267/j.pep.729},
-	url = {https://doi.org/10.18267%2Fj.pep.729},
-	year = 2020,
-	month = {jun},
-	publisher = {University of Economics},
-	volume = {29},
-	number = {3},
-	pages = {291--314},
-	author = {Jakub Jakl},
-	title = {Outreach and Effects of the {ECB} Corporate Sector Purchase Programme},
-	journal = {Prague Economic Papers}
-}
-@article{Georgiadis_2015,
-	doi = {10.24149/gwp232},
-	url = {https://doi.org/10.24149%2Fgwp232},
-	year = 2015,
-	publisher = {Federal Reserve Bank of Dallas},
-	volume = {2015},
-	number = {232},
-	author = {Georgios Georgiadis and   and Johannes Gräb and},
-	title = {Global Financial Market Impact of the Announcement of the {ECB}{\textquotesingle}s Extended Asset Purchase Programme},
-	journal = {Federal Reserve Bank of Dallas, Globalization and Monetary Policy Institute Working Papers}
-}
-{"status":"error","message-type":"exception","message-version":"1.0.0","message":{"name":"class java.lang.NullPointerException","description":"java.lang.NullPointerException","message":null,"stack":[],"cause":null}}
-@article{Fr_hwirth_2010,
-	doi = {10.1111/j.1468-036x.2009.00503.x},
-	url = {https://doi.org/10.1111%2Fj.1468-036x.2009.00503.x},
-	year = 2010,
-	month = {aug},
-	publisher = {Wiley},
-	volume = {16},
-	number = {4},
-	pages = {658--685},
-	author = {Manfred Fr�hwirth and Paul Schneider and Leopold S�gner},
-	title = {The Risk Microstructure of Corporate Bonds: A Case Study from the German Corporate Bond Market},
-	journal = {European Financial Management}
-}
 @book{Alain_2017,
 	doi = {10.1093/law/9780198811756.003.0004},
 	url = {https://doi.org/10.1093%2Flaw%2F9780198811756.003.0004},
@@ -404,7 +301,7 @@
 	url = {https://doi.org/10.2139%2Fssrn.3742875},
 	year = 2020,
 	publisher = {Elsevier {BV}},
-	author = {Taneli Mäkinen and Andrea Mercatanti and Andrea Silvestrini and Fan Li},
+	author = {Taneli MÃ¤kinen and Andrea Mercatanti and Andrea Silvestrini and Fan Li},
 	title = {Effects of Eligibility for Central Bank Purchases on Corporate Bond Spreads},
 	journal = {{SSRN} Electronic Journal}
 }
@@ -478,7 +375,7 @@
 	url = {https://doi.org/10.2139%2Fssrn.3742875},
 	year = 2020,
 	publisher = {Elsevier {BV}},
-	author = {Taneli Mäkinen and Andrea Mercatanti and Andrea Silvestrini and Fan Li},
+	author = {Taneli MÃ¤kinen and Andrea Mercatanti and Andrea Silvestrini and Fan Li},
 	title = {Effects of Eligibility for Central Bank Purchases on Corporate Bond Spreads},
 	journal = {{SSRN} Electronic Journal}
 }

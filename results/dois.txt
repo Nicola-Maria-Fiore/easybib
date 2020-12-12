@@ -1,0 +1,53 @@
+
+@article{Boehmer_2012,
+	doi = {10.1093/rfs/hhs097},
+	url = {https://doi.org/10.1093%2Frfs%2Fhhs097},
+	year = 2012,
+	month = {sep},
+	publisher = {Oxford University Press ({OUP})},
+	volume = {26},
+	number = {2},
+	pages = {287--322},
+	author = {Ekkehart Boehmer and Juan (Julie) Wu},
+	title = {Short Selling and the Price Discovery Process},
+	journal = {Review of Financial Studies}
+}
+@article{Sims_2003,
+	doi = {10.1016/s0304-3932(03)00029-1},
+	url = {https://doi.org/10.1016%2Fs0304-3932%2803%2900029-1},
+	year = 2003,
+	month = {apr},
+	publisher = {Elsevier {BV}},
+	volume = {50},
+	number = {3},
+	pages = {665--690},
+	author = {Christopher A. Sims},
+	title = {Implications of rational inattention},
+	journal = {Journal of Monetary Economics}
+}
+@article{Doyle_2009,
+	doi = {10.2308/accr.2009.84.1.157},
+	url = {https://doi.org/10.2308%2Faccr.2009.84.1.157},
+	year = 2009,
+	month = {jan},
+	publisher = {American Accounting Association},
+	volume = {84},
+	number = {1},
+	pages = {157--182},
+	author = {Jeffrey T. Doyle and Matthew J. Magilke},
+	title = {The Timing of Earnings Announcements: An Examination of the Strategic Disclosure Hypothesis},
+	journal = {The Accounting Review}
+}
+@article{Michaely_2016,
+	doi = {10.1016/j.jfineco.2016.05.006},
+	url = {https://doi.org/10.1016%2Fj.jfineco.2016.05.006},
+	year = 2016,
+	month = {oct},
+	publisher = {Elsevier {BV}},
+	volume = {122},
+	number = {1},
+	pages = {65--85},
+	author = {Roni Michaely and Amir Rubin and Alexander Vedrashko},
+	title = {Are Friday announcements special? Overcoming selection bias},
+	journal = {Journal of Financial Economics}
+}
