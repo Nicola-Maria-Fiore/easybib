@@ -1,7 +1,6 @@
 from habanero import Crossref
 from Utils import Utils
 from cit2bib import getBibtex
-import requests
 
 def start():
     print("DOI -> BIBTEX")

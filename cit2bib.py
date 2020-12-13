@@ -7,7 +7,7 @@ cr = Crossref()
 def getBibtex(DOI):
     try: 
         url_bibtex = "http://api.crossref.org/works/" + DOI + "/transform/application/x-bibtex"
-        x = requests.get(url_bibtex)
+        x = requests.get(url_bibtex, headers=Utils.HEADERS)
         return str(x.text)
     except:
         return False
