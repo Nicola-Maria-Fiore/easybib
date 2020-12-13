@@ -9,6 +9,8 @@ class Utils:
     doi_out_file = "results/dois.txt"
     doi_out_file_csv = "results/dois.csv"
 
+    HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'}
+
     def readFileLines(name):
         lines = []
         with open(name, encoding="utf-8") as file_in:
