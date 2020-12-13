@@ -1,6 +1,5 @@
 import time
 import requests
-import functools
 import pandas as pd
 from bs4 import BeautifulSoup
 from Utils import Utils
@@ -59,6 +58,7 @@ def start(query, scholar_pages):
 
         i += 1
         url += "&start=" + str(10*i)
+        time.sleep(2)
         
     df = df.applymap(lambda x: str(x).replace(","," "))
     df["Cite"] = df["Cite"].astype('int64')
