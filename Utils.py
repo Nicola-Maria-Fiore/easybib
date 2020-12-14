@@ -1,12 +1,12 @@
 class Utils:
     #Files fot task citation -> bibtex
     cit_file = "resources/citations.txt"
-    cit_out_file = "results/citations.txt"
+    cit_out_file = "results/citations.bib"
     cit_out_file_csv = "results/citations.csv"
 
     #Files fot task doi -> bibtex
     doi_file = "resources/dois.txt"
-    doi_out_file = "results/dois.txt"
+    doi_out_file = "results/dois.bib"
     doi_out_file_csv = "results/dois.csv"
 
     #Files for Scholar -> csv
