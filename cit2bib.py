@@ -53,7 +53,7 @@ def start():
             b = getBibtex(doi)
             if b!=False:
                 bibtex += "\n"+str(b)
-        csv += '\n'+str(doi)+";"+c.replace(";"," ")+";"+str(b).replace(";"," ").replace("\n","")
+        csv += '\n'+str(doi)+';"'+c.replace(";"," ")+'";"'+str(b).replace(";"," ").replace("\n","")+'"'
 
     Utils.writeFile(Utils.cit_out_file, bibtex)
     Utils.writeFile(Utils.cit_out_file_csv, csv)
