@@ -9,6 +9,8 @@ def getBibtex(DOI):
         url_bibtex = "http://api.crossref.org/works/" + DOI + "/transform/application/x-bibtex"
         x = requests.get(url_bibtex, headers=Utils.HEADERS)
         x = str(x.text)
+        if x[0]!="@":
+            return False
         start_au = x.find("author = {")
         if start_au>=0:
             end_au = x.find("}",start_au)
@@ -27,7 +29,6 @@ def getBibtex(DOI):
             x = x[:start_au] + " ".join(subs) + x[end_au:]
         return x
     except  Exception as e:
-        print(e)
         return False
 
 
@@ -44,17 +45,15 @@ def start():
     citations = Utils.readFileLines(Utils.cit_file)
 
     bibtex = ""
-    csv = "DOI,BIBTEX,CITATION"
+    csv = "DOI;CITATION;BIBTEX"
     for i, c in enumerate(citations):
         print("Processing {}/{}".format(str(i),str(len(citations))))
         doi = getDOI(c)
-        b = False
         if  doi!=False:
             b = getBibtex(doi)
             if b!=False:
                 bibtex += "\n"+str(b)
-                b = True
-        csv += '\n'+str(doi)+","+str(b)+","+c.replace(","," ")
+        csv += '\n'+str(doi)+";"+c.replace(";"," ")+";"+str(b).replace(";"," ").replace("\n","")
 
     Utils.writeFile(Utils.cit_out_file, bibtex)
     Utils.writeFile(Utils.cit_out_file_csv, csv)

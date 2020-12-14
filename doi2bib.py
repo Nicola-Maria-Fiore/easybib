@@ -7,14 +7,14 @@ def start():
     dois = Utils.readFileLines(Utils.doi_file)
 
     bibtex = ""
-    csv = "DOI,BIBTEX"
+    csv = "DOI;BIBTEX"
     for i,doi in enumerate(dois):
         print("Processing {}/{}".format(str(i),str(len(dois))))
         b = getBibtex(doi)
         if  b!=False:
             bibtex += "\n"+str(b)
             b = True
-        csv += '\n'+str(doi)+","+str(b).replace(","," ")
+        csv += '\n'+str(doi)+";"+str(b).replace(";"," ")
 
     Utils.writeFile(Utils.doi_out_file, bibtex)
     Utils.writeFile(Utils.doi_out_file_csv, csv)
