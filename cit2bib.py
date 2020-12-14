@@ -49,6 +49,7 @@ def start():
     for i, c in enumerate(citations):
         print("Processing {}/{}".format(str(i),str(len(citations))))
         doi = getDOI(c)
+        b = False
         if  doi!=False:
             b = getBibtex(doi)
             if b!=False:
