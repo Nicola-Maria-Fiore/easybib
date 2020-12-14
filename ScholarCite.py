@@ -42,25 +42,29 @@ def schoolarParser(html):
         df_count += 1
 
 
-def start(query, scholar_pages):
+def start(scholar_pages):
     global df
     print("Sort Scholar results by cite")
-    url = "https://scholar.google.com/scholar?hl=en&q="+query+"&as_vis=1&as_sdt=1,5"  
-        
-    results = []
-    i = 0
-    while i < scholar_pages:
-        html = requests.get(url, headers=Utils.HEADERS)
-        html = html.text
-        
-        papers = schoolarParser(html)
-        results.append(papers)
 
-        i += 1
-        url += "&start=" + str(10*i)
-        time.sleep(2)
-        
-    df = df.applymap(lambda x: str(x).replace(","," "))
-    df["Cite"] = df["Cite"].astype('int64')
-    df = df.sort_values(by=['Cite'], ascending=False)
-    df.to_csv("results/scholar_cite.csv",encoding='utf-8-sig', index=False)
+    links = Utils.readFileLines(Utils.scholar_file)
+    k = 0   
+    for url in links:
+        results = []
+        i = 0
+        while i < scholar_pages:
+            html = requests.get(url, headers=Utils.HEADERS)
+            html = html.text
+            
+            papers = schoolarParser(html)
+            results.append(papers)
+
+            i += 1
+            url += "&start=" + str(10*i)
+            time.sleep(2)
+            
+        df = df.applymap(lambda x: str(x).replace(","," "))
+        #df["Cite"] = df["Cite"].astype('int64')
+        df = df.sort_values(by=['Cite'], ascending=False)
+        fout = Utils.out_scholar_file+"_"+str(k)+".csv"
+        df.to_csv(fout,encoding='utf-8-sig', index=False)
+        k += 1

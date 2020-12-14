@@ -8,7 +8,22 @@ def getBibtex(DOI):
     try: 
         url_bibtex = "http://api.crossref.org/works/" + DOI + "/transform/application/x-bibtex"
         x = requests.get(url_bibtex, headers=Utils.HEADERS)
-        return str(x.text)
+        x = str(x.text)
+        start_au = x.find("author = {")
+        if start_au>=0:
+            end_au = x.find("}",start_au+1)
+            subs = x[start_au:end_au]
+            i = 0
+            while i<len(subs):
+                subs[i] = subs[i].lower()
+                name = subs[i]
+                name[0] = name[0].upper()
+                subs[i] = name
+                i += 1
+                
+            #subs = subs.split()
+            
+        return x
     except:
         return False
 

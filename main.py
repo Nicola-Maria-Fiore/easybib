@@ -9,8 +9,8 @@ if __name__ == "__main__":
         cit2bib.start()
     elif sys.argv[1]=="-d":
         doi2bib.start()
-    elif sys.argv[1]=="-s" and len(sys.argv)==4:
-        ScholarCite.start(sys.argv[2],int(sys.argv[3]))
+    elif sys.argv[1]=="-s":
+        ScholarCite.start(int(sys.argv[2]))
     else:
         print("Argument error")
         sys.exit()
