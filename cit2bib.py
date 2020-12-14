@@ -45,7 +45,7 @@ def start():
     citations = Utils.readFileLines(Utils.cit_file)
 
     bibtex = ""
-    csv = '"DOI";"CITATION";"BIBTEX"'
+    csv = '"DOI","CITATION","BIBTEX"'
     for i, c in enumerate(citations):
         print("Processing {}/{}".format(str(i),str(len(citations))))
         doi = getDOI(c)
@@ -53,7 +53,7 @@ def start():
             b = getBibtex(doi)
             if b!=False:
                 bibtex += "\n"+str(b)
-        csv += '\n"'+str(doi)+'";"'+c.replace(";"," ")+'";"'+str(b).replace(";"," ").replace("\n","")+'"'
+        csv += '\n"'+str(doi)+'","'+c+'","'+str(b).replace("\n","")+'"'
 
     Utils.writeFile(Utils.cit_out_file, bibtex)
     Utils.writeFile(Utils.cit_out_file_csv, csv)
