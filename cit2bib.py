@@ -11,20 +11,20 @@ def getBibtex(DOI):
         x = str(x.text)
         start_au = x.find("author = {")
         if start_au>=0:
-            end_au = x.find("}",start_au+1)
-            subs = x[start_au:end_au]
+            end_au = x.find("}",start_au)
+            subs = (x[start_au+1:end_au]).split()
             i = 0
+            print(subs)
             while i<len(subs):
                 subs[i] = subs[i].lower()
                 name = subs[i]
                 name[0] = name[0].upper()
                 subs[i] = name
                 i += 1
-                
-            #subs = subs.split()
-            
+            x = x[:start_au] + " ".join(subs) + x[end_au:]
         return x
-    except:
+    except  Exception as e:
+        print(e)
         return False
 
 
