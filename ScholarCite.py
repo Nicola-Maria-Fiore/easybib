@@ -4,7 +4,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from Utils import Utils
 
-df = pd.DataFrame(columns=["Title","Cite", "Author", "Year", "Info", "Link"])
+df = None
 df_count = 0
 
 def getAutJurPub(tag):
@@ -49,6 +49,7 @@ def start(scholar_pages):
     links = Utils.readFileLines(Utils.scholar_file)
     k = 0   
     for url in links:
+        df = pd.DataFrame(columns=["Title","Cite", "Author", "Year", "Info", "Link"])
         results = []
         i = 0
         while i < scholar_pages:

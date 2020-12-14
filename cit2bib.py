@@ -12,14 +12,17 @@ def getBibtex(DOI):
         start_au = x.find("author = {")
         if start_au>=0:
             end_au = x.find("}",start_au)
-            subs = (x[start_au+1:end_au]).split()
-            i = 0
-            print(subs)
+            subs = (x[start_au:end_au]).split()
+            i = 1
             while i<len(subs):
                 subs[i] = subs[i].lower()
-                name = subs[i]
-                name[0] = name[0].upper()
-                subs[i] = name
+                if subs[i] != "and":
+                    name = list(subs[i])
+                    k = 0
+                    if name[0] in ["{","("]:
+                        k = 1
+                    name[k] = name[k].upper()
+                    subs[i] = "".join(name)
                 i += 1
             x = x[:start_au] + " ".join(subs) + x[end_au:]
         return x
