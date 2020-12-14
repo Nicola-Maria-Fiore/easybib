@@ -14,7 +14,7 @@ def start():
         if  b!=False:
             bibtex += "\n"+str(b)
             b = True
-        csv += '\n'+str(doi)+","+str(b)
+        csv += '\n'+str(doi)+","+str(b).replace(","," ")
 
     Utils.writeFile(Utils.doi_out_file, bibtex)
     Utils.writeFile(Utils.doi_out_file_csv, csv)
