@@ -11,3 +11,5 @@ py main.py -s 5
 
 (where 5 is the number of Scholar pages to inspect).
 The results will be available on the *results* folder
+
+pip install -r requirements.txt
